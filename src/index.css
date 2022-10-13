@@ -3,3 +3,7 @@
   --color-lavendar: #d0d6f9;
   --color-white: #ffffff;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
