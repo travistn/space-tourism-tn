@@ -2,17 +2,24 @@ import React from 'react';
 
 const Home = () => {
   return (
-    <div className='w-screen h-screen bg-home-mobile md:bg-home-tablet lg:bg-home-desktop bg-no-repeat bg-cover bg-center'>
-      <div className='flex flex-col'>
-        <div className='flex flex-col items-center m-auto mt-[8rem] w-[330px]'>
-          <h5 className='uppercase text-color-lavendar font-barlow-condensed tracking-[2.7px]'>
-            So, you want to travel to
-          </h5>
-          <h2 className='uppercase text-white text-[80px] font-bellefair mt-4'>Space</h2>
-          <p className='text-color-lavendar text-[15px] text-center font-barlow mt-2'>
-            Let's face it; if you want to go to space, you might as well genuinely go to outer space
-            and not hover kind of on the edge of it. Well sit back, and relax because we'll give you
-            a truly out of this world experience!
+    <div className='w-screen h-screen bg-home-mobile md:bg-home-tablet lg:bg-home-desktop bg-no-repeat bg-cover bg-center flex flex-col lg:flex-row'>
+      <div className='flex flex-col items-center lg:items-start m-auto w-[330px] md:w-[450px]'>
+        <h5 className='uppercase text-color-lavendar font-barlow-condensed md:text-[20px] lg:text-[28px] tracking-[2.7px] md:tracking-[3.4px] lg:tracking-[4.7px] leading-5 md:leading-6 lg:leading-[34px]'>
+          So, you want to travel to
+        </h5>
+        <h2 className='uppercase text-white text-[80px] md:text-[150px] font-bellefair mt-4 leading-[100px] md:leading-[150px] lg:leading-[172px]'>
+          Space
+        </h2>
+        <p className='text-color-lavendar text-[15px] md:text-[16px] lg:text-[18px] text-center lg:text-start font-barlow mt-2 leading-[25px] md:leading-[28px] lg:leading-[32px]'>
+          Let's face it; if you want to go to space, you might as well genuinely go to outer space
+          and not hover kind of on the edge of it. Well sit back, and relax because we'll give you a
+          truly out of this world experience!
+        </p>
+      </div>
+      <div className='flex justify-center mb-12 md:mb-[6rem] lg:items-center lg:mr-[16rem] lg:mt-[12rem]'>
+        <div className='flex justify-center items-center w-[150px] md:w-[242px] lg:w-[274px] h-[150px] md:h-[242px] lg:h-[274px] bg-white rounded-full'>
+          <p className='uppercase font-bellefair text-xl md:text-[32px] tracking-wider md:tracking-[2px] md:leading-[37px]'>
+            Explore
           </p>
         </div>
       </div>
