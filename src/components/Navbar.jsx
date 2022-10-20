@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 import logo from '../assets/shared/logo.svg';
 import menuIcon from '../assets/shared/icon-hamburger.svg';
@@ -7,6 +7,11 @@ import closeIcon from '../assets/shared/icon-close.svg';
 
 const Navbar = () => {
   const [menuToggle, setMenuToggle] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    setMenuToggle(false);
+  }, [location]);
 
   return (
     <>
