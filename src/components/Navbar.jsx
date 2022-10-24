@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className='w-screen absolute flex flex-row items-center mt-8 pl-8 pr-8 md:pr-0 md:pl-12 md:h-24 md:mt-0 lg:mt-8'>
+      <div className='w-screen flex flex-row items-center mt-8 pl-8 pr-8 md:pr-0 md:pl-12 md:h-24 md:mt-0 lg:mt-8'>
         <img src={logo} alt='logo' className='w-10 h-10 md:w-12 md:h-12' />
         <img
           src={menuIcon}
