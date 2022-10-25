@@ -16,9 +16,9 @@ const Destination = () => {
   };
 
   return (
-    <div className='w-screen h-screen bg-destination-mobile md:bg-destination-tablet bg-no-repeat bg-cover bg-center flex flex-col items-center overflow-auto'>
+    <div className='w-screen min-h-[100vh] bg-destination-mobile md:bg-destination-tablet lg:bg-destination-desktop bg-no-repeat bg-cover bg-center flex flex-col items-center'>
       <Navbar />
-      <div className='flex flex-col m-auto items-center gap-8 mb-[2rem] mt-8 md:mt-12'>
+      <div className='flex flex-col m-auto items-center gap-8 mb-8 mt-8 md:mt-12'>
         <h5 className='uppercase text-white font-barlow-condensed text-[16px] md:text-[20px] tracking-[2.7px] md-tracking[3.4px] leading-[19px] md:leading-[24px]'>
           <span className='font-bold mr-4 opacity-25'>01</span>Pick your destination
         </h5>
