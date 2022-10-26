@@ -45,7 +45,7 @@ const Navbar = () => {
         </div>
       </div>
       {menuToggle && (
-        <div className='absolute w-[70%] h-screen bg-navbar-links backdrop-blur-2xl right-0 md:hidden'>
+        <div className='fixed w-[70%] min-h-screen bg-navbar-links backdrop-blur-2xl right-0 md:hidden z-10'>
           <img
             src={closeIcon}
             alt='close-icon'
