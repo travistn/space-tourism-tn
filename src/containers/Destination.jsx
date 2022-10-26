@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 import data from '../data.json';
 import Navbar from '../components/Navbar';
@@ -6,7 +6,6 @@ import Navbar from '../components/Navbar';
 const Destination = () => {
   const destinations = data.destinations;
   const [destination, setDestination] = useState(destinations[0]);
-  const [activeDestination, setActiveDestination] = useState();
 
   const getDestination = (e) => {
     const findDestination = destinations.find(
@@ -15,10 +14,6 @@ const Destination = () => {
 
     setDestination(findDestination);
   };
-
-  useEffect(() => {
-    setActiveDestination(destination);
-  }, [destination]);
 
   return (
     <div className='w-screen min-h-[100vh] bg-destination-mobile md:bg-destination-tablet lg:bg-destination-desktop bg-no-repeat bg-cover bg-center flex flex-col items-center'>
@@ -36,16 +31,15 @@ const Destination = () => {
         </div>
         <div className='flex flex-col items-center gap-8 lg:gap-12 lg:w-[450px] 2xl:w-[480px] lg:mt-12'>
           <div className='flex flex-row gap-8 text-color-lavendar font-barlow-condensed text-[14px] md:text-[16px] lg:text-[20px] 2xl:text-[24px] tracking-[2.3px] md:tracking-[2.7px] md:leading-[19px] uppercase'>
-            {destinations.map((destination) => (
+            {destinations.map((activeDestination) => (
               <p
                 onClick={getDestination}
-                key={destination.name}
-                className={
-                  activeDestination === destination
-                    ? 'border-b-[2px] pb-2 md:pb-4 text-white lg:hover:cursor-pointer lg:hover:text-white'
-                    : 'lg:hover:cursor-pointer lg:hover:text-white'
-                }>
-                {destination.name}
+                key={activeDestination.name}
+                className={`lg:hover:cursor-pointer lg:hover:text-white 
+                ${
+                  activeDestination === destination ? 'border-b-[2px] pb-2 md:pb-4 text-white ' : ''
+                }`}>
+                {activeDestination.name}
               </p>
             ))}
           </div>
