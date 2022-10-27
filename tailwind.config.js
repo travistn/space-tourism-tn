@@ -22,6 +22,9 @@ module.exports = {
         'crew-mobile': 'url(../src/assets/crew/background-crew-mobile.jpg)',
         'crew-tablet': 'url(../src/assets/crew/background-crew-tablet.jpg)',
         'crew-desktop': 'url(../src/assets/crew/background-crew-desktop.jpg)',
+        'technology-mobile': 'url(../src/assets/technology/background-technology-mobile.jpg)',
+        'technology-tablet': 'url(../src/assets/technology/background-technology-tablet.jpg)',
+        'technology-desktop': 'url(../src/assets/technology/background-technology-desktop.jpg)',
       },
       backgroundColor: {
         'navbar-links': 'rgba(255, 255, 255, 0.04)',
