@@ -17,8 +17,8 @@ const Technology = () => {
   return (
     <div className='flex flex-col w-screen min-h-screen bg-technology-mobile bg-no-repeat bg-cover bg-center'>
       <Navbar />
-      <div className='flex flex-col items-center mt-8 gap-8'>
-        <h5 className='flex flex-row gap-4 text-[16px] md:text-[20px] text-white font-barlow-condensed uppercase tracking-[2.7px] md:tracking-[3.4px] leading-[19px] md:leading-[24px] md:mr-auto md:ml-8'>
+      <div className='flex flex-col items-center mt-8 gap-8 md:gap-12'>
+        <h5 className='flex flex-row gap-4 text-[16px] md:text-[20px] text-white font-barlow-condensed uppercase tracking-[2.7px] md:tracking-[3.4px] leading-[19px] md:leading-[24px] md:mr-auto md:ml-8 md:mt-4'>
           <span className='opacity-25'>03</span> Space Launch 101
         </h5>
         <img
