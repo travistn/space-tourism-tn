@@ -5,6 +5,7 @@ import './App.css';
 import Home from './containers/Home';
 import Destination from './containers/Destination';
 import Crew from './containers/Crew';
+import Technology from './containers/Technology';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Route path='/' element={<Home />} />
         <Route path='/destination' element={<Destination />} />
         <Route path='/crew' element={<Crew />} />
+        <Route path='/technology' element={<Technology />} />
       </Routes>
     </>
   );
