@@ -22,10 +22,7 @@ const Crew = () => {
         </h5>
         <div className='md:order-last'>
           <img
-            src={require(`../assets/crew/image-${crewMember.name
-              .split(' ')
-              .join('-')
-              .toLowerCase()}.png`)}
+            src={crewMember.images.png}
             alt='crew-pic'
             className='h-[222px] md:h-[572px] lg:h-[650px] 2xl:h-[700px] md:order-last lg:fixed lg:bottom-0 lg:right-[6rem] 2xl:right-[10rem]'
           />

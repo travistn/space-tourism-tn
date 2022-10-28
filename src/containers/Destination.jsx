@@ -24,7 +24,7 @@ const Destination = () => {
             <span className='font-bold mr-4 opacity-25'>01</span>Pick your destination
           </h5>
           <img
-            src={require(`../assets/destination/image-${destination.name.toLowerCase()}.png`)}
+            src={destination.images.png}
             alt='destination-pic'
             className='w-[170px] md:w-[300px] lg:w-[445px] 2xl:w-[500px] h-[170px] md:h-[300px] lg:h-[445px] 2xl:h-[500px] md:mt-4 lg:mt-[4rem]'
           />
